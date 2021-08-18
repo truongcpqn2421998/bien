@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="tien.js"></script>
+</head>
+<body>
+  <table>
+    <tr>
+        <th>Amount</th>
+        <th></th>
+        <th>From Currency</th>
+        <th></th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><label for="Nhap"></label><input type="text" id="Nhap"></td>
+        <td></td>
+        <td>
+            <select name="country1" onchange="truoc()" id="truoc">
+                <option value="ViệtNam">Việt Nam</option>
+                <option value="Mỹ">Mỹ</option>
+            </select>
+        </td>
+        <td></td>
+        <td><select name="country2" onchange="sau()" id="sau">
+            <option value="USD">USD</option>
+            <option value="Đồng">Đồng</option>
+        </select>
+        </td>
+        <td>
+            <input type="button" value="Convert" onclick="MO()">
+        </td>
+    </tr>
+  </table>
+<p id="tiente"></p>
+</body>
+</html>
